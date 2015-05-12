@@ -1,0 +1,14 @@
+<extend name="Base/common" />
+<block name="style">
+    <link href="__CSS__/style.css" rel="stylesheet" />
+</block>
+<block name="body">
+    <include file="_left" />
+        <div class="col-md-10 app_head">
+            <div class="app_title">
+                <i class="app_ico_i glyphicon glyphicon-th-large"> </i>{$meta_title}
+                <a class="btn pull-right" href="javascript:history.go(-1);" >返回</a>
+            </div>
+        </div>
+
+</block>

@@ -1,0 +1,39 @@
+<div class="col-md-2" >
+    <nav class="menu" data-toggle="menu" >
+        <div class="dropdown">
+            <if condition="$mp_ids_list gt  0">
+                <empty  name="$member_public.public_name">
+                    <button class="btn dropdown-toggle btn-primary btn-block" type="button" data-toggle="dropdown">{$member_public.public_name|msubstr_local=0,5,'utf-8'} <span class="caret"></span></button>
+                </empty>
+                <else />
+            </if>
+            <ul class="dropdown-menu">
+
+                <volist name='member_public_list' id='vo'>
+                    <li><a href="{:U('Weixin/Index/changPublic','id='.$vo['id'])}" title="{$vo.public_name}">{$vo.public_name|msubstr_local=0,5,'utf-8'}</a></li>
+                </volist>
+                <li role="presentation" class="dropdown-header">没有更多公众号</li>
+            </ul>
+        </div>
+        <ul class="nav nav-primary f-mt10">
+            <li ><a href="#"><i class="icon-th"></i>管理菜单</a></li>
+            <li><a href="#"><i class="icon-user"></i> Me</a></li>
+            <li>
+                <a href="#"><i class="icon-time"></i> Time</a>
+                <ul class="nav">
+                    <li><a href="#">Today</a></li>
+                    <li><a href="#">Tomarrow</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="icon-list-ul"></i> All</a></li>
+
+            <li class="active show">
+                <a href="#"><i class="icon-tasks"></i> Status</a>
+                <ul class="nav">
+                    <li><a href="#"><i class="icon-circle-blank"></i> Ready</a></li>
+                    <li class="active"><a href="#"><i class="icon-play-sign"></i> Ongoing</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>

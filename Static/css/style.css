@@ -1,0 +1,32 @@
+/*应用公共css*/
+.app_head {
+  background: white;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1em;
+}
+.app_title {
+  padding: 0.3em .8em;
+  font-size: 1.5em;
+  line-height: 1.4em;
+}
+.app_title .app_ico_i {
+  font-size: .8em;
+  margin-right: .5em;
+}
+.aline {
+  border-bottom: 1px solid white;
+  border-top: 1px solid #ccc;
+}
+.f-tac{text-align: center;}
+.wp-list{width:250px;display: inline-block;margin: 8px;border: 1px solid #ccc;}
+.f-mt10{margin-top: 10px;}
+.f-pb10{padding-bottom: 10px;}
+.tab-content{text-align: left;}
+.tab-pane{padding: 10px;}
+.check-tips{font-weight: normal;color: #666;}
+.form-item{padding-bottom: 10px;border-bottom: 1px dotted #ccc;padding-top: 10px;}
+.table td{text-align: left;}
+
+.nav-primary{
+    background-color: #fff;}
